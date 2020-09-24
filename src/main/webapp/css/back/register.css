@@ -1,0 +1,63 @@
+div.register{
+    width: 1000px;
+    margin: 40px auto;
+}
+div.topregister{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(49, 67, 81);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-left: 40px;
+    line-height: 50px;
+
+}
+div.regDiv{
+    width: 1000px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 14px;
+    color: rgb(116, 119, 120);
+    border: 1px solid rgb(73, 175, 217);
+    border-radius: 3px;
+    background-color: rgb(225, 241, 246);
+    margin: 30px 0px;
+}
+table.registertable input{
+    width: 300px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgb(220,220,220);
+    padding-left: 5px;
+}
+table.registertable a#button{
+    width: 70px;
+    height: 37px;
+    display: inline-block;
+    padding: 9px 0px 0px 20px;
+    border: 1.2px solid rgb(73, 175, 217);
+    border-radius: 3px;
+    background-color: white;
+    color: rgb(73, 175, 217);
+    outline: none;
+    margin-left: 10px;
+}
+table.registertable button.btn{
+    width: 70px;
+    height: 37px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(73, 175, 217);
+}
+div.progress{
+    width: 300px;
+    height: 2px;
+    background-color: rgb(154, 154, 154);
+}
+span.glyphicon-exclamation-sign{
+    display: none;
+}

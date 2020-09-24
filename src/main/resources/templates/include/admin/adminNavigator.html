@@ -1,0 +1,19 @@
+<nav id="top" th:fragment="html">
+	<div>
+		<a href="/novel/admin_kind_list">
+			<img src="img/selt/shuhai.png">
+		</a>
+	</div>
+	<div>
+		<a href="/novel/adminUpdate">
+			<img :src="'img/Head_Image/' + user.fileImage.id + '.jpg'">
+			<span>{{user.name}}</span>
+		</a>
+	</div>
+	<div>
+		<a href="#" @click="deleteUser">
+			<span class="glyphicon glyphicon-off"></span>
+			<span>退出登录</span>
+		</a>
+	</div>
+</nav>

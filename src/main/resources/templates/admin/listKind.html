@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:include="include/admin/adminHeader::html('种类选择')"></div>
+    <script src="js/kind/kind.js"></script>
+    <link href="css/back/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="kind">
+        <div th:replace="include/admin/adminNavigator::html"></div>
+        <a :href="'admin_category_list?kid=' + bean.id" v-for="bean in beans">
+            <div>{{bean.name}}</div>
+        </a>
+
+        <div>请选择以上要发布的书籍</div>
+    </div>
+</body>
+</html>

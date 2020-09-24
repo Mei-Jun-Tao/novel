@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:include="include/admin/adminHeader::html('分类管理')"></div>
+    <link href="css/back/register.css" rel="stylesheet">
+    <script src="js/register/register.js"></script>
+</head>
+<body>
+<div id="regis">
+    <div class="topregister">love shop</div>
+    <div class="register">
+        <div>注册</div>
+        <div class="regDiv">填写此注册表单以访问<span>ag shop</span>。如果您是ag shop新用户，请完成下面的注册，以便管理这个账户。</div>
+        <div style="margin-bottom: 25px;">登录信息</div>
+        <table class="registertable">
+            <tr>
+                <td>
+                    <span>电子邮件地址</span>
+                </td>
+                <td height="80px">
+                    <input type="text" v-model.trim="bena.emallAddress">
+                    <span id="1" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);">{{emptys}}</span>
+                    <span style="font-size: 12px;color: rgb(108, 108, 108); margin-left: 10px;">激活电子邮件将发送到您提供的地址</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">验证电子邮件地址</span>
+                </td>
+                <td>
+                    <input type="text" class="verify" @keyup="ist">
+                    <span id="2" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="80px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">密码</span>
+                </td>
+                <td>
+                    <input type="password" decide="blue" num="3" v-model.trim="bena.password" name="password">
+                    <span id="3" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                    <span style="font-size: 12px;color: rgb(108, 108, 108); margin-left: 10px;">最少应使用8个字符，最多20个字符</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">验证密码</span>
+                </td>
+                <td>
+                    <input type="password" class="menus" @keyup="ist">
+                    <span id="4" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="80px" style="padding-bottom: 20px;">
+                    <span style="font-size: 25px;">介绍您的自身情况</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">管理员名</span>
+                </td>
+                <td>
+                    <input type="text" class="menu" decide="blue" num="5" v-model.trim="bena.name" name="name">
+                    <span id="5" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">真实姓名</span>
+                </td>
+                <td>
+                    <input type="text" class="menu" decide="blue" num="6" v-model.trim="bena.realname" name="realname">
+                    <span id="6" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">手机</span>
+                </td>
+                <td>
+                    <input type="text" class="menu" decide="blue" num="7" v-model.trim="bena.cellNumber" name="cellNumber">
+                    <span id="7" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">所在地址</span>
+                </td>
+                <td>
+                    <input type="text" class="menu" decide="blue" num="8" v-model.trim="bena.address" name="address">
+                    <span id="8" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td height="50px" style="padding-bottom: 20px;">
+                    <span style="font-weight:bolder;color: black;">邮政编码</span>
+                </td>
+                <td>
+                    <input type="text" class="menu" decide="blue" num="9" v-model.trim="bena.postalCode" name="postalCode">
+                    <span id="9" class="glyphicon glyphicon-exclamation-sign" style="font-size: 14px;color: rgb(201, 33, 0);" num="5">{{emptys}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="80px">
+                    <button type="submit" @click="add" class="btn">注册</button>
+                    <a href="adminLogin" style="margin-top: 25px;" id="button">取消</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

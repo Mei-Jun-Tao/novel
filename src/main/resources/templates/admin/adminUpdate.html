@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <div th:include="include/admin/adminHeader::html('分类管理')"></div>
+    <link href="css/back/style.css" rel="stylesheet">
+    <script src="js/update/update.js"></script>
+</head>
+<body>
+<div id="update">
+    <div th:replace="include/admin/adminNavigator::html"></div>
+    <div class="update">
+        <div>个人信息</div>
+        <div class="button">
+            <button class="mess" @click="convert($event)">基本信息</button>
+            <button class="pass" @click="convert($event)">修改密码</button>
+            <button class="imgss" @click="convert($event)">更换头像</button>
+        </div>
+        <div class="message">
+            <div class="mess">
+                <div>
+                    <span>作者名</span>
+                    <input type="text" v-model.trim="user.name">
+                </div>
+                <div>
+                    <span>真实名</span>
+                    <input type="text" v-model.trim="user.realname">
+                </div>
+                <div>
+                    <span>手机号码</span>
+                    <input type="text" v-model.trim="user.cellNumber">
+                </div>
+                <div>
+                    <span>邮箱地址</span>
+                    <input type="text" v-model.trim="user.emallAddress">
+                </div>
+                <div>
+                    <span>所在地</span>
+                    <input type="text" v-model.trim="user.address">
+                </div>
+                <div>
+                    <span>邮政编号</span>
+                    <input type="text" v-model.trim="user.postalCode">
+                </div>
+                <div>
+                    <button @click="update">保存信息</button>
+                </div>
+            </div>
+
+            <div class="pass" style="display: none;">
+                <div>
+                    <span>旧密码</span>
+                    <input type="password" v-model.trim="worn">
+                </div>
+                <div>
+                    <span>新密码</span>
+                    <input type="password" v-model.trim="news">
+                </div>
+                <div>
+                    <span>确认密码</span>
+                    <input type="password" v-model.trim="affirm">
+                </div>
+                <div>
+                    <button @click="update">确认</button>
+                    <button @click="emptys">清空</button>
+                </div>
+            </div>
+
+            <div class="imgss" style="display: none;">
+                <div>
+                    <input type="file" class="file" name="image" @change="getFile($event)">
+                    <div>
+                        <img :src="'img/Head_Image/'+user.fileImage.id+'.jpg'">
+                    </div>
+                </div>
+                <div>
+                    <h5>您上传的头像会自动生成三种尺寸，请注意中小尺寸的头像是否清晰，<br />也可以通过手机端拍照上传</h5>
+                    <button @click="updateImage">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

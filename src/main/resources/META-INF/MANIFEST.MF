@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Class-Path: commons-pool2-2.4.3.jar jackson-databind-2.8.10.jar secure
+ sm-1.0.jar commons-cli-1.3.1.jar spring-webmvc-4.3.13.RELEASE.jar spr
+ ing-boot-starter-aop-1.5.9.RELEASE.jar t-digest-3.0.jar groovy-2.4.13
+ .jar jna-3.0.9.jar hibernate-commons-annotations-5.0.1.Final.jar tomc
+ at-juli-8.5.23.jar spring-tx-4.3.13.RELEASE.jar mysql-connector-java-
+ 5.1.21.jar tomcat-annotations-api-8.5.23.jar spring-boot-starter-data
+ -elasticsearch-1.5.9.RELEASE.jar spatial4j-0.5.jar logback-core-1.1.1
+ 1.jar jcl-over-slf4j-1.7.25.jar shiro-spring-1.3.2.jar lucene-spatial
+ 3d-5.5.4.jar lucene-queryparser-5.5.4.jar jboss-logging-3.3.1.Final.j
+ ar xercesImpl-2.11.0.jar hamcrest-core-1.3.jar guava-18.0.jar lucene-
+ misc-5.5.4.jar jedis-2.9.0.jar hsqldb-2.3.5.jar nekohtml-1.9.22.jar v
+ alidation-api-1.1.0.Final.jar spring-data-jpa-1.11.9.RELEASE.jar jack
+ son-dataformat-yaml-2.8.10.jar logback-classic-1.1.11.jar spring-data
+ -redis-1.8.9.RELEASE.jar unbescape-1.1.0.RELEASE.jar thymeleaf-layout
+ -dialect-1.4.0.jar javassist-3.21.0-GA.jar commons-collections-3.2.2.
+ jar lucene-queries-5.5.4.jar shiro-web-1.3.2.jar commons-lang-2.6.jar
+  spring-boot-starter-1.5.9.RELEASE.jar spring-oxm-4.3.13.RELEASE.jar 
+ spring-expression-4.3.13.RELEASE.jar lucene-sandbox-5.5.4.jar compres
+ s-lzf-1.0.2.jar tomcat-embed-jasper-8.5.23.jar jandex-2.0.0.Final.jar
+  hibernate-validator-5.3.6.Final.jar spring-context-support-4.3.13.RE
+ LEASE.jar classmate-1.3.4.jar snakeyaml-1.17.jar lucene-grouping-5.5.
+ 4.jar jackson-dataformat-smile-2.8.10.jar spring-data-keyvalue-1.2.9.
+ RELEASE.jar joda-time-2.9.9.jar spring-boot-starter-data-jpa-1.5.9.RE
+ LEASE.jar javax.transaction-api-1.2.jar jackson-annotations-2.8.0.jar
+  junit-4.12.jar slf4j-api-1.7.25.jar spring-boot-starter-web-1.5.9.RE
+ LEASE.jar tomcat-embed-el-8.5.23.jar ecj-3.12.3.jar spring-core-4.3.1
+ 3.RELEASE.jar jackson-core-2.8.10.jar dom4j-1.6.1.jar lucene-suggest-
+ 5.5.4.jar spring-boot-starter-thymeleaf-1.5.9.RELEASE.jar jsr166e-1.1
+ .0.jar lucene-backward-codecs-5.5.4.jar jackson-dataformat-cbor-2.8.1
+ 0.jar jul-to-slf4j-1.7.25.jar elasticsearch-2.4.6.jar hibernate-core-
+ 5.0.12.Final.jar spring-jdbc-4.3.13.RELEASE.jar lucene-join-5.5.4.jar
+  thymeleaf-spring4-2.1.6.RELEASE.jar spring-boot-autoconfigure-1.5.9.
+ RELEASE.jar spring-boot-starter-jdbc-1.5.9.RELEASE.jar HdrHistogram-2
+ .1.6.jar shiro-core-1.3.2.jar ognl-3.0.8.jar spring-boot-1.5.9.RELEAS
+ E.jar hppc-0.7.1.jar lucene-core-5.5.4.jar lucene-highlighter-5.5.4.j
+ ar spring-boot-starter-data-redis-1.5.9.RELEASE.jar thymeleaf-2.1.6.R
+ ELEASE.jar spring-context-4.3.13.RELEASE.jar spring-data-elasticsearc
+ h-2.1.9.RELEASE.jar antlr-2.7.7.jar log4j-over-slf4j-1.7.25.jar sprin
+ g-boot-devtools-1.5.9.RELEASE.jar spring-orm-4.3.13.RELEASE.jar netty
+ -3.10.6.Final.jar spring-aspects-4.3.13.RELEASE.jar spring-beans-4.3.
+ 13.RELEASE.jar hibernate-entitymanager-5.0.12.Final.jar spring-web-4.
+ 3.13.RELEASE.jar lucene-analyzers-common-5.5.4.jar aspectjweaver-1.8.
+ 13.jar spring-data-commons-1.13.9.RELEASE.jar tomcat-jdbc-8.5.23.jar 
+ lucene-memory-5.5.4.jar xml-apis-1.4.01.jar spring-aop-4.3.13.RELEASE
+ .jar hibernate-jpa-2.1-api-1.0.0.Final.jar tomcat-embed-core-8.5.23.j
+ ar spring-boot-starter-logging-1.5.9.RELEASE.jar lucene-spatial-5.5.4
+ .jar commons-beanutils-1.9.3.jar
+Main-Class: com.mjt.Application
+

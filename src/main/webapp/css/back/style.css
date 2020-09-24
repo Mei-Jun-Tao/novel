@@ -1,0 +1,362 @@
+body{
+	background-color: rgb(240, 240, 240);
+}
+/*首页样式*/
+div#kind>div:nth-of-type(1){
+	font: 30px bolder;
+	text-align: center;
+}
+div#kind>a:nth-of-type(n+1){
+	text-decoration: none;
+}
+div#kind>a:nth-of-type(n+1) div{
+	width: 280px;
+	height: 180px;
+	border: 1px solid red;
+	border-radius: 5px;
+	margin: 100px auto;
+	font: 50px bolder;
+	color: black;
+	text-align: center;
+	line-height: 180px;
+	box-sizing: border-box;
+}
+/*头部样式*/
+nav{
+	width: 1536px;
+	height: 80px;
+	background-color: rgb(21, 180, 141);
+	display: flex;
+	padding: 0px 150px;
+}
+nav a{
+	font-size: 13px;
+	color: white;
+}
+nav a:hover{
+	color: white;
+}
+a:hover{
+	text-decoration: none;
+}
+nav>div:nth-of-type(n+2){
+	width: 120px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	box-sizing: border-box;
+}
+nav>div:nth-of-type(1) img{
+	height: 60px;
+	margin: 10px 810px 0px 0px;
+}
+nav>div:nth-of-type(2) img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-top: 20px;
+	border-radius: 50%;
+}
+nav>div:nth-of-type(2) span{
+	width: 60px;
+	height: 80px;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-left: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 80px;
+	float: left;
+}
+nav>div:nth-of-type(3) span:first-child{
+	font-size: 18px;
+}
+nav>div:nth-of-type(n+2):hover{
+	background-color: rgba(0, 0, 0, 0.3);
+}
+/*面包屑导航样式*/
+ol.breadcrumb{
+	width: 1200px;
+	height: 50px;
+	font-size: 18px;
+	color: rgb(50, 50, 50);
+	margin: 30px auto;
+	padding-top: 13px;
+	border-radius: 5px;
+	background: white;
+}
+ol.breadcrumb a{
+	font-size: 18px;
+	color: rgb(3, 174, 132);
+}
+ol.breadcrumb a:hover{
+	color: rgb(50, 50, 50);
+}
+/*显示列表样式*/
+table.table{
+	width: 1200px;
+	margin: 20px auto;
+	border-radius: 3px;
+	background-color: white;
+}
+table.table tr:nth-of-type(1){
+	background-color: rgb(3, 174, 132);
+}
+table.table a{
+	font-size: 18px;
+	color: black;
+}
+table.table a:hover{
+	color: #000;
+}
+/*分页样式*/
+ul.pagination{
+	display: flex;
+	justify-content: center;
+}
+/*添加块样式*/
+div.panel{
+	width: 440px;
+	margin: 50px auto;
+}
+div.panel td{
+	height: 60px;
+}
+div.panel input.txt{
+	width: 300px;
+	height: 40px;
+	border-radius: 3px;
+	border: none;
+	outline: none;
+	padding-left: 5px;
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+div.panel input.file{
+	border: none;
+	outline: none;
+}
+div.panel button{
+	width: 300px;
+	height: 40px;
+	margin-left: 55px;
+	border: none;
+	border-radius: 5px;
+	background-color: rgb(3, 174, 132);
+	color: white;
+	font: 18px bolder;
+	outline: none;
+}
+/*后台登录样式*/
+div.adminLogin{
+	width: 320px;
+	position: absolute;
+	top: 200px;
+	left: 1000px;
+	background-color: white;
+	border-radius: 4px;
+	padding: 20px 0px;
+}
+div.adminLogin a{
+	font: 12px bolder;
+	color: rgb(108, 108, 108);
+}
+a:hover{
+	text-decoration: none;
+}
+div.adminLogin div.glyphicon{
+	width: 40px;
+	height: 40px;
+	background-color: rgb(211, 211, 211);
+	color: white;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 1px;
+	margin-top: -1px;
+	float: left;
+}
+div.adminLogin input{
+	width: 220px;
+	height: 40px;
+	border: 2px solid rgb(211, 211, 211);
+	border-radius: 1px;
+	outline: none;
+	padding-left: 3px;
+	float: left;
+	box-sizing: border-box;
+}
+div.adminLogin button{
+	width: 220px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	background-color: rgb(255, 68, 0);
+	color: white;
+	font-size: 20px;
+	margin-left: 30px;
+}
+div.Login{
+	width: 250px;
+	height: 30px;
+	border: 1px solid rgb(255, 180, 168);
+	border-radius: 1px;
+	background-color: rgb(254, 242, 242);
+	color: rgb(211, 211, 211);
+	font-size: 12px;
+	line-height: 30px;
+}
+div.Login span{
+	color: rgb(255, 68, 0);
+	margin: 0px 15px;
+}
+div.Login+div{
+	font: 18px bolder;
+	display: none;
+}
+div.adminLogin>div{
+	width: 320px;
+	height: 60px;
+	box-sizing: border-box;
+	padding: 0px 20px;
+}
+/*编辑信息样式*/
+div.update{
+	width: 1200px;
+	border-radius: 3px;
+	margin: 15px auto;
+}
+div.update>div:first-child{
+	width: 1200px;
+	height: 45px;
+	font: 18px bolder;
+	line-height: 45px;
+	padding-left: 10px;
+	color: #000;
+	border: 1px solid rgb(240, 240, 240);
+	background-color: white;
+}
+div.update>div:nth-of-type(2){
+	width: 1200px;
+	height: 30px;
+	border: 1px solid rgb(240, 240, 240);
+	background-color: white;
+	box-sizing: border-box;
+}
+div.update>div:nth-of-type(2) button{
+	width: 80px;
+	height: 28px;
+	float: left;
+	color: rgb(21, 180, 141);
+	font-size: 14px;
+	line-height: 28px;
+	outline: none;
+	border: none;
+	background-color: white;
+	box-sizing: border-box;
+}
+div.update>div:nth-of-type(2) button:first-child{
+	border-bottom: 2px solid rgb(21, 180, 141);
+}
+div.update>div:nth-of-type(2) button:hover{
+	color: white;
+	background-color: rgb(210, 210, 210);
+}
+
+div.message button{
+	height: 40px;
+	border: none;
+	border-radius: 3px;
+	background-color: rgb(21, 180, 141);
+	outline: none;
+	color: white;
+	font: 18px bolder;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+div.message{
+	width: 1200px;
+	background-color: white;
+	border: 1px solid rgb(240, 240, 240);
+	padding-bottom: 20px;
+}
+div.mess,div.pass,div.imgss{
+	width: 1000px;
+	margin: 15px auto;
+}
+div.mess>div{
+	width: 500px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	display: grid;
+	grid-template-columns: 100px 400px;
+	line-height: 50px;
+	box-sizing: border-box;
+}
+div.mess>div:last-child{
+	display: block;
+}
+div.mess>div button{
+	width: 500px;
+	margin-left: 250px;
+}
+
+
+div.pass>div{
+	width: 500px;
+	height: 50px;
+	display: grid;
+	grid-template-columns: 100px 400px;
+	line-height: 50px;
+	box-sizing: border-box;
+	margin-top: 20px;
+}
+div.message input{
+	width: 300px;
+	height: 40px;
+	border: none;
+	outline: none;
+	border-radius: 3px;
+	margin-top: 5px;
+	box-shadow: 0px 0px 10px rgb(200, 200, 200);
+	box-sizing: border-box;
+}
+div.pass>div:last-child{
+	display: block;
+}
+div.pass>div button{
+	width: 80px;
+	margin-left: 50px;
+}
+
+div.imgss input{
+	margin-top: 20px;
+	border: none;
+	outline: none;
+	box-shadow: 0px 0px 0px rgb(200, 200, 200);
+}
+div.imgss>div:nth-of-type(1){
+	float: left;
+}
+div.imgss>div:nth-of-type(1)>div{
+	width: 300px;
+	height: 300px;
+	margin-top: 20px;
+	border: 2px solid rgb(200, 200, 200);
+}
+div.imgss>div:nth-of-type(1) img{
+	width: 100%;
+	height: 100%;
+}
+div.imgss>div:nth-of-type(2){
+	width: 500px;
+	height: 350px;
+	float: left;
+	margin: 20px 0px 0px 100px;
+	color: salmon;
+}
+div.imgss button{
+	width: 150px;
+	margin: 200px;
+}
